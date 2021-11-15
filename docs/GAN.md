@@ -60,13 +60,75 @@ Yann LeCun评价GAN：
 
 ###  生成模型中的问题
 
+**自编码器**
+
+<img src="./PIC/GAN/3.png" alt="3" style="zoom:33%;" />
+
+**概率模型**
+
+- 按照某种概率分布生成数据，得到最能覆盖训练样本的概率分布
+- 需要确定样本的概率模型，即显式地定义概率密度函数
+
+对于GAN模型，我们就是改进这些问题，做到估计样本概率分布却不需要显示定义概率分布
+
+<img src="./PIC/GAN/4.png" alt="4" style="zoom:33%;" />
+
 ### GAN模型示例
 
-### GAN目标函数
+**生成模型**
 
-### GAN损失函数
+- 捕捉样本数据的分布，用服从某一分布(均匀分布，高斯分布)的 噪声z生成一个类似真实训练数据的样本，追求效果是越像真实的 数据越好
+- $𝑝_{𝑑𝑎𝑡𝑎} (𝑥)$ 表示真实数据的𝑥分布
+- $𝑝_𝑧 (𝑧)$ 表示输入噪声变量𝑧的分布
+- $𝑝_𝑔$ 表示在数据𝑥上学习得到的生成样本的分布
+- $𝐺(𝑧;𝜃_𝑔 )$ 表示生成模型(多层感知器)
+
+**判别模型**
+
+- 一个二分类器，估计一个样本来自训练数据(而非生成数据)的概率，如果样本来自真实的训练数据，输出大概率，否则，输出小概 率。
+- $𝐷(𝑥;𝜃_𝑑)$ 表示判别模型(多层感知器)
+- $𝐷(𝑥)$ 表示𝑥来自真实数据而非生成数据的概率
+
+用网络代替概率模型$𝑃(𝑥;𝜃),𝑃_{data}(𝑥)$
+
+<img src="./PIC/GAN/15.png" alt="15" style="zoom:33%;" />
+
+### GAN目标函数和损失函数
+
+$$
+\min _{G} \max _{D} V(G, D)=E_{x \sim p_{\text {data }}(x)}[\log D(x)]+E_{z \sim p_{z}(z)}[\log (1-D(G(z)))]
+$$
+
+- 训练GAN的时候，判别模型希望目标函数最大化，也就是使判别模 型判断真实样本为“真”，判断生成样本为“假”的概率最大化， 要尽量最大化自己的判别准确率
+- 判别模型也可以写成损失函数的形式：
+
+$$
+L(G, D)=-E_{x \sim p_{\text {data }}(x)}[\log D(x)]-E_{z \sim p_{z}(z)}[\log (1-D(G(z)))]
+$$
+
+- 与之相反，生成模型希望该目标函数最小化，也就是降低 判别模型对数据来源判断正确的概率，要最小化判别模型 的判别准确率
 
 ### GAN模型训练
+
+- GAN在训练的过程中固定一方，更新另一方的网络权重
+- 交替迭代，在这个过程中，双方都极力优化自己的网络， 从而形成竞争对抗，直到双方达到一个动态的平衡(纳什均衡)
+- 此时生成模型的数据分布无限接近训练数据的分布(造出 了和真实数据一模一样的样本)，判别模型再也判别不出 来真实数据和生成数据，准确率为50%。
+
+固定**G**，训练**D**时，最优的判别器为：
+$$
+D_{G}^{*}=\frac{p_{\text {data }}(\boldsymbol{x})}{p_{\text {data }}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}
+$$
+证明：
+
+<img src="./PIC/GAN/5.png" alt="5" style="zoom:33%;" />
+
+<img src="./PIC/GAN/6.png" alt="6" style="zoom:33%;" />
+
+全局最优的生成函数值**-log4**
+
+<img src="./PIC/GAN/7.png" alt="7" style="zoom:33%;" />
+
+<img src="./PIC/GAN/8.png" alt="8" style="zoom:33%;" />
 
 ### 优势和不足
 
@@ -92,14 +154,6 @@ Yann LeCun评价GAN：
 - Improved Techniques for Training GANs
 - GP-GAN: Towards Realistic High-Resolution Image Blending
 
-**CGAN**
-
-
-
-
-
-
-
 ### 迭代式生成优化
 
 - –  LAPGAN:Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks
@@ -114,15 +168,40 @@ Yann LeCun评价GAN：
 
 - Pix2Pix: Image-to-Image Translation with Conditional Adversarial Networks
 
+# GAN的主要应用
 
+### 图像转换
 
+https://affinelayer.com/pixsrv/
 
+<img src="./PIC/GAN/9.png" alt="9" style="zoom:33%;" />
 
+### 图像迁移
 
+https://junyanz.github.io/CycleGAN/
 
+<img src="./PIC/GAN/10.png" alt="10" style="zoom:33%;" />
 
+### 图像生成
 
+ https://arxiv.org/abs/1606.03498
 
+<img src="./PIC/GAN/11.png" alt="11" style="zoom:33%;" />
 
+### 图像合成
 
+https://arxiv.org/abs/1704.04086
 
+<img src="./PIC/GAN/12.png" alt="12" style="zoom:33%;" />
+
+### 图像预测
+
+https://arxiv.org/abs/1702.01983
+
+<img src="./PIC/GAN/13.png" alt="13" style="zoom:33%;" />
+
+### 图像修复
+
+https://arxiv.org/abs/1604.07379
+
+<img src="./PIC/GAN/14.png" alt="14" style="zoom:33%;" />

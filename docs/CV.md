@@ -115,11 +115,31 @@ $$
 $$
 总的优化目标函数：
 $$
-\begin{aligned}  \mathcal{L}=\mathcal{L}_{\text {rec }}+\lambda_{\text {asymm }} \mathcal{L}_{\text {asymm }}+\lambda_{T V} \mathcal{L}_{T V} \\ \mathcal{L}_{\text {rec }}=\|\hat{\mathbf{x}}-\mathbf{x}\|_{2}^{2} \quad \mathcal{L}_{T V}=\left\|\nabla_{h} \hat{\sigma}(\mathbf{y})\right\|_{2}^{2}+\left\|\nabla_{v} \hat{\sigma}(\mathbf{y})\right\|_{2}^{2} \end{aligned}
+\mathcal{L}=\mathcal{L}_{\text {rec }}+\lambda_{\text {asymm }} \mathcal{L}_{\text {asymm }}+\lambda_{T V} \mathcal{L}_{T V} \\ \mathcal{L}_{\text {rec }}=\|\hat{\mathbf{x}}-\mathbf{x}\|_{2}^{2} \quad \mathcal{L}_{T V}=\left\|\nabla_{h} \hat{\sigma}(\mathbf{y})\right\|_{2}^{2}+\left\|\nabla_{v} \hat{\sigma}(\mathbf{y})\right\|_{2}^{2} 
 $$
 参考：Guo S, Yan Z, Zhang K, et al. Toward convolutional blind denoising of real photographs[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2019: 1712-1722.
 
-### 
+**CBDNet**性能分析：在实际的带噪图像上的结果
+
+<img src="./PIC/CV/11.png" alt="11" style="zoom:50%;" />
+
+### 图像增强
+
+多种图像增强技术：图像的选帧、图像的降噪、图像的增强、重影 的消除、对比度调整
+
+### 弱光照增强
+
+问题描述：解决暗光拍照由于光线不足，导致的欠曝光或者对比度不足的问题
+
+解决手段：根本上是调整图像的对比度
+
+<img src="./PIC/CV/12.png" alt="12" style="zoom:50%;" />
+
+### 夜景增强
+
+**LLNet (Low-light Net)**
+
+...
 
 
 
@@ -129,9 +149,39 @@ $$
 
 
 
+# 图像/视频压缩
+
+### 编码框架
+
+**JPEG压缩**
+
+<img src="./PIC/CV/13.png" alt="13" style="zoom:50%;" />
+
+**视频编码**
+
+<img src="./PIC/CV/14.png" alt="14" style="zoom:50%;" />
 
 
 
+
+
+# 传统的计算机视觉处理
+
+
+
+# 图像分类
+
+
+
+# 目标检测
+
+
+
+# 图像分割
+
+
+
+# 图像回归
 
 
 
