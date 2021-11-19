@@ -69,7 +69,7 @@ $$
 \hat{G}_h &= P_h \exp(d_h(P))
 \end{align}
 $$
-<img src="/Users/liuyang/Desktop/中科院/datawhale/DL理论/PIC/RCNN&YOLO/7.png" alt="7" style="zoom:50%;" />
+<img src="./PIC/RCNN&YOLO/7.png" alt="7" style="zoom:50%;" />
 
 mAP：mean Average Precision，是多标签图像分类任务中的评价指标。AP衡量的是学出来的模型在给定类别上的好坏，而mAP衡量的是学出的模型在所有类别上的好坏。
 
@@ -77,7 +77,7 @@ mAP：mean Average Precision，是多标签图像分类任务中的评价指标�
 
 SPPnet (Spatial Pyramid Pooling)：空间金字塔网络，R-CNN主要问题：每个Proposal独立提取CNN features，分步训练。
 
-<img src="/Users/liuyang/Desktop/中科院/datawhale/DL理论/PIC/RCNN&YOLO/9.png" alt="9" style="zoom:50%;" />
+<img src="./PIC/RCNN&YOLO/9.png" alt="9" style="zoom:50%;" />
 
 <img src="./PIC/RCNN&YOLO/10.png" alt="10" style="zoom:50%;" />
 
@@ -156,4 +156,3 @@ SPPnet (Spatial Pyramid Pooling)：空间金字塔网络，R-CNN主要问题：�
 **性能分析**
 
 <img src="./PIC/RCNN&YOLO/22.png" alt="22" style="zoom:50%;" />
-

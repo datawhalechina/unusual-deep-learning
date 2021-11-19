@@ -47,16 +47,3 @@ ALBERT（A Lite BERT）即轻量级的BERT，轻量级主要体现在减少传�
 |        | BERT               | RoBERTa            | DistilBERT | XLNet              | ALBERT           |
 | ------ | ------------------ | ------------------ | ---------- | ------------------ | ---------------- |
 | Size/M | Base 110 Large 340 | Base 110 Large 340 | 66         | Base 110 Large 340 | Base 12 Large 18 |
-
-
-
-
-
-
-
-
-
-
-
-
-
