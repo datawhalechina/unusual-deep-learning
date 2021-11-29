@@ -1,7 +1,5 @@
 <!-- docs/_sidebar.md -->
 
-
-
 - [前言](README)
 - [操作指南](guide)
 - [深度学习理论框架](DLT框架)
@@ -15,7 +13,7 @@
 - [优化算法](优化算法.md)
 - [正则化方法](正则化方法.md)
 - [注意力机制与外部记忆](注意力机制.md)
-- [Transformer](Transformer.md)
+* [Transformer](Transformer.md)
 * [深度生成模型](深度生成模型)
 * [深度学习常见的平台](深度学习平台)
 * [GAN](GAN)
