@@ -23,5 +23,7 @@
 * [CV](CV.md)
 * [Speech](Speech.md)
 * [NLP](NLP.md)
-* [专题](专题.md)
+* [专题目录](专题.md)
+* [专题1](GAN_shenhao.md)
+* [基础1](交叉熵和散度.md)
 * [中英文对照手册](手册)
