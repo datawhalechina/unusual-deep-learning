@@ -24,5 +24,4 @@
   - [Speech](Speech)
   - [NLP](NLP)
   - [专题目录](0.专题)
-  - [专题1](GAN_shenhao)
   - [中英文对照手册](手册)
