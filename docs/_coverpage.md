@@ -1,7 +1,7 @@
 <!-- _coverpage.md -->
 
 <div align=center>
-<img src="https://gitee.com/shenhao-stu/picgo/raw/master/Big-Data/logo.png" width="250">
+<img src="logo.jpg" width="250">
 </div>
 
 <!-- 背景图片 -->
