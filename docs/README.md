@@ -142,7 +142,7 @@ Unusual Deep learning
 
 | 成员 | 个人简介                                            | 个人主页                                                     |
 | ---- | --------------------------------------------------- | ------------------------------------------------------------ |
-| 刘洋 | DataWhale成员，中国科学院数学与系统科学研究院研究生 | https://www.zhihu.com/people/ming-ren-19-34 公众号：鸣也的小屋 |
+| 刘洋 | DataWhale成员，中国科学院数学与系统科学研究院研究生 | [知乎主页](https://www.zhihu.com/people/ming-ren-19-34)<br />公众号：鸣也的小屋<br />[个人主页](https://liu-yang-maker.github.io/Liu.Y/) |
 
 #### 其他
 
