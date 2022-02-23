@@ -18,6 +18,6 @@
 - 一起学习
 - 侧重理论
 
-[GitHub](https://github.com/liu-yang-maker/Easy-DL-Theory)
+[GitHub](https://github.com/datawhalechina/unusual-deep-learning)
 [zhihu](https://www.zhihu.com/people/ming-ren-19-34)
 [Get Started](README)

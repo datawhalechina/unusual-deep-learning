@@ -5,14 +5,14 @@
 [>>操作指南](guide.md)
 
 ### 水很深的深度学习
-1. 绪论与深度学习概述
-2. 数学基础
+1. 绪论与深度学习概述（视频地址：https://www.bilibili.com/video/BV1iq4y197L4?p=1）
+2. 数学基础（视频地址：https://www.bilibili.com/video/BV1iq4y197L4?p=1）
 3. 机器学习基础
-4. 前馈神经网络 
-5. 卷积神经网络CNN 
-6. 循环神经网络RNN
-7. 网络优化
-8. 正则化方法
+4. 前馈神经网络 （视频地址：https://www.bilibili.com/video/BV1iq4y197L4?p=2）
+5. 卷积神经网络CNN （视频地址：https://www.bilibili.com/video/BV1iq4y197L4?p=3）
+6. 循环神经网络RNN（视频地址：https://www.bilibili.com/video/BV1iq4y197L4?p=4）
+7. 网络优化（视频地址：https://www.bilibili.com/video/BV1iq4y197L4?p=5）
+8. 正则化方法（视频地址：https://www.bilibili.com/video/BV1iq4y197L4?p=6）
 9. 注意力机制与外部记忆
 10. GAN
 11. 深度生成模型
